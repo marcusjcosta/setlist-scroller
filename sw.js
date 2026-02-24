@@ -1,4 +1,4 @@
-const CACHE_NAME = 'setlist-scroller-v3';
+const CACHE_NAME = 'setlist-scroller-v4';
 const ASSETS = [
   '/',                // raiz
   '/index.html',
@@ -42,3 +42,6 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
+self.skipWaiting();
+self.clientsClaim();
